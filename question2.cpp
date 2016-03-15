@@ -37,6 +37,7 @@ int main(int argc, char *argv[]) {
 	cout << "CM3 starts at " << myTime << endl;			// demonstrate overloaded stream insertion operator
 
 	myTime.set(10, 30);									// change the time
+	cout << myTime << endl;                            //Test mutator function
 
 	int hours, mins;									// get changed time
 
