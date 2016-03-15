@@ -5,6 +5,12 @@
 // Date:  15 March 2016
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
+#include <cstdio>
+#include <ctime>
+#include <string>
+#include <cmath>
+
+#include "Time.h"
 
 using namespace std;
 
