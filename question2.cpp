@@ -48,4 +48,12 @@ int main(int argc, char *argv[]) {
 	myTime.get(hours, mins);
 	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
 
+	//Testing increment counter
+	for (int i = 0; i < 20; i++)
+	{
+		myTime++;
+		cout << myTime << endl;
+	}
+
+	return 0;   //NB THIS WAS NOT INCLUDED IN SAMPLE CODE. IN ORDER TO MAKE COUNTING WORK IT HAD TO BE INCLUDED -- PM
 }
