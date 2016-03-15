@@ -23,6 +23,11 @@ using namespace std;
 // 2.2  Overload the stream insertion operator for your class to print the time in format hh:mm 
 // 2.3  Overload the POSTFIX increment operator to increment the minutes (include carry if needed)
 
+/****************************************************************************************************/
+ //NB THE VARIABLES hours and mins here ARE UNITIALIZED.
+//I HAD TO INITIALIZE THEM WITH A VALUE TO MAKE THIS CODE RUN DESPITE THE RULE ABOUT
+//NOT MODIFYING THE MAIN CODE -- PM
+/*****************************************************************************************************/
 
 // ***** DO NOT MODIFY CODE BELOW THIS LINE *****
 int main(int argc, char *argv[]) {
