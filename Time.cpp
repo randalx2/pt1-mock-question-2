@@ -22,9 +22,6 @@ Time::~Time(){    //Default destructor
 
 }
 
-void get(int ihours, int iminutes){  //Accessor function to set time
-
-}
 
 void Time::set(int ihours, int iminutes){  //Mutator function to set the time--checks for proper input
 
@@ -45,7 +42,7 @@ void Time::get(int ihours, int iminutes){   //function merely accesses and chang
 	minutes = iminutes;
 }
 
-ostream &operator << (ostream &output, Time clk)   //This has friendship so scope resolution operator is not needed
+ostream &operator << (ostream &output, Time &clk)   //This has friendship so scope resolution operator is not needed
 {
 	if (clk.hours < 10)
 	{

@@ -15,7 +15,7 @@ public: Time();  //Default constructor declaration
 		void get(int, int);
 		void set(int, int);   //Accessor and Mutator member functions
 
-		friend ostream &operator << (ostream &output, Time clk);  //Overloading stream insertion operator
+		friend ostream &operator << (ostream &output, Time &clk);  //Overloading stream insertion operator
 		Time operator++(int);  //Post fix increment operator
 };
 

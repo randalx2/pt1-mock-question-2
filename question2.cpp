@@ -49,11 +49,12 @@ int main(int argc, char *argv[]) {
 	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
 
 	//Testing increment counter
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 60; i++)
 	{
 		myTime++;
 		cout << myTime << endl;
 	}
 
+	system("PAUSE");
 	return 0;   //NB THIS WAS NOT INCLUDED IN SAMPLE CODE. IN ORDER TO MAKE COUNTING WORK IT HAD TO BE INCLUDED -- PM
 }
