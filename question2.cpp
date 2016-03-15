@@ -46,13 +46,12 @@ int main(int argc, char *argv[]) {
 	cin >> hours >> mins;
 
 	myTime.get(hours, mins);
-	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
+	cout << "Design 1 starts at " << mins << " past " << hours << endl;   // display time in another format
 
 	//Testing increment counter
 	for (int i = 0; i < 60; i++)
 	{
-		myTime++;
-		cout << myTime << endl;
+		cout << myTime++ << endl;
 	}
 
 	system("PAUSE");

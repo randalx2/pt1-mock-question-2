@@ -44,7 +44,7 @@ void Time::get(int ihours, int iminutes){   //function merely accesses and chang
 
 ostream &operator << (ostream &output, Time &clk)   //This has friendship so scope resolution operator is not needed
 {
-	if (clk.hours < 10)
+	/*if (clk.hours < 10)
 	{
 		output << '0' << clk.hours << ':' << clk.minutes << endl;
 	}
@@ -52,12 +52,29 @@ ostream &operator << (ostream &output, Time &clk)   //This has friendship so sco
 	if (clk.minutes < 10)
 	{
 		output << clk.hours << ':' << '0' << clk.minutes << endl;
-	}
+	} */
 
 	if ((clk.hours < 10) && (clk.minutes < 10))
 	{
 		output << '0' << clk.hours << ':' << '0' << clk.minutes << endl;
 	}
+
+	else if (clk.hours < 10)
+	{
+		output << '0' << clk.hours << ':' << clk.minutes << endl;
+	}
+
+	else if (clk.minutes < 10)
+
+	{
+		output << clk.hours << ':' << '0' << clk.minutes << endl;
+	}
+
+	else
+	{
+		output << clk.hours << ':' << clk.minutes << endl;
+	}
+
 	return output;
 }
 
