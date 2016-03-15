@@ -39,6 +39,12 @@ int main(int argc, char *argv[]) {
 	myTime.set(10, 30);									// change the time
 
 	int hours, mins;									// get changed time
+
+	//NB Had to initialize these variables to make code run --sorry-- PM
+
+	cout << "Please Enter the hours followed by minutes in the old clock format ie only consider 12 as max hours" << endl;
+	cin >> hours >> mins;
+
 	myTime.get(hours, mins);
 	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
 
