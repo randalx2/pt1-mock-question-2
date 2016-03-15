@@ -24,7 +24,7 @@ using namespace std;
 // 2.3  Overload the POSTFIX increment operator to increment the minutes (include carry if needed)
 
 /****************************************************************************************************/
- //NB THE VARIABLES hours and mins here ARE UNITIALIZED.
+ //NB THE VARIABLES hours and mins here ARE NOT INITIALIZED.
 //I HAD TO INITIALIZE THEM WITH A VALUE TO MAKE THIS CODE RUN DESPITE THE RULE ABOUT
 //NOT MODIFYING THE MAIN CODE -- PM
 /*****************************************************************************************************/
@@ -46,7 +46,8 @@ int main(int argc, char *argv[]) {
 	cout << "Please Enter the hours followed by minutes in the old clock format ie only consider 12 as max hours" << endl;
 	cin >> hours >> mins;
 
-	myTime.get(hours, mins);
+	myTime.get(hours, mins);       //accessor function to set private object attributes
+	myTime.set(hours, mins);       //Check for correct input with mutator
 	cout << "Design 1 starts at " << mins << " past " << hours << endl;   // display time in another format
 
 	//Testing increment counter
